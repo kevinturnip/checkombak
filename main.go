@@ -13,10 +13,10 @@ const (
 	DB_USER            = "postgres"
 	DB_PASSWORD        = "postgres"
 	DB_NAME            = "tunaiku"
-	LimitPrime         = 100 // this is limit of prine number function
-	EvenOddLimit       = 100 // this is limit of even odd function
-	NominalAmountStart = 2000000
-	NominalAmountEnd   = 15000000
+	LimitPrime         = 100      // this is limit of prine number function
+	EvenOddLimit       = 100      // this is limit of even odd function
+	NominalAmountStart = 2000000  // start nominal amount function
+	NominalAmountEnd   = 15000000 // end nominal amount function
 )
 
 type PrimeNumber struct {
