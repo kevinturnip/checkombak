@@ -79,8 +79,6 @@ func NominalAmountFunc() {
 	beginNominal := float64(NominalAmountStart)
 	for beginNominal <= float64(endNominal) {
 		var nominalAmount NominalAmount
-		// for i := NominalAmountStart; NominalAmountStart <= endNominal; i += total {
-		fmt.Println(beginNominal, "<=", endNominal)
 		interest, total := getInterestAndTotal(beginNominal)
 		nominalAmount.Nominal = beginNominal
 		nominalAmount.AdditionalNumber = interest
@@ -145,7 +143,6 @@ func InsertDB(ColumnName []string, val []interface{}) {
 	fmt.Println("# Inserting values")
 	// query := fmt.Sprintf("INSERT INTO %v(%v) VALUES,", DB_NAME, ColumnName)
 	// sqlStr := fmt.Sprintf("%v", query)
-	fmt.Println(val)
 	byteData, _ := json.Marshal(val)
 	switch len(ColumnName) {
 	case 2:
